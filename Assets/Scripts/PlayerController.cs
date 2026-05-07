@@ -21,5 +21,6 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(-2,0,0);
         }
+        //if(transform.Position(-4,0,0))
     }
 }
