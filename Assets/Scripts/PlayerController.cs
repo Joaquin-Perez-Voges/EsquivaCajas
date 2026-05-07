@@ -21,6 +21,13 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(-2,0,0);
         }
-        //if(transform.Position(-4,0,0))
+        //if(transform.position.x >= 2)
+        //{
+        //  transform.position(2,0,0);
+        //}
+        //if(transform.position.x <= -4)
+        //{
+        //  transform.position(-2,0,0);
+        //}
     }
 }
