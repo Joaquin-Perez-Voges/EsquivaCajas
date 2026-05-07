@@ -19,9 +19,13 @@ public class CajaMovement : MonoBehaviour
     }
 
     public void MoveBoxToRandomPosition()
-    {
+    {       
+        int randomXPosition = Random.Range(-2,3);
         Vector3 newPosition = transform.position;
         newPosition.y = initialYValue;
+        newPosition.x = randomXPosition;
         transform.position = newPosition;
+        
+        
     }
 }
