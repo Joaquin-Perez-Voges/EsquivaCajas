@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerCollisionDetection : MonoBehaviour
 {
-    
+    public Cronometro UICronometro;
     void Start()
     {
-        
+        UICronometro = FindObjectOfType<Cronometro>();
     }
 
     void OnCollisionEnter(Collision col)
@@ -16,6 +16,10 @@ public class PlayerCollisionDetection : MonoBehaviour
         if(col.gameObject.CompareTag("Caja"))
         {
             Destroy(gameObject);
+            UICronometro.PausarTimer();
+
         }
     }
+    
+
 }
